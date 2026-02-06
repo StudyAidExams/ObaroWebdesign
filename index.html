@@ -1,784 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Rivera - WordPress Developer | Custom Sites That Convert</title>
-  <link rel="stylesheet" href="css/main.css">
+  <title>Alex Rivera - WordPress Developer</title>
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Flandingpa4398back.builtwithrocket.new&_be=https%3A%2F%2Fappanalytics.rocket.new&_v=0.1.17"></script>
-  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
-  </head>
-<body class="bg-zinc-950 text-zinc-50 antialiased selection:bg-blue-500 selection:text-white">
-
-  <!-- Background Grid Lines (Desktop Only) -->
-  <div class="hidden lg:grid fixed inset-0 grid-cols-8 pointer-events-none px-10 z-0">
-    <div class="grid-line border-l border-white/5"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-  </div>
+</head>
+<body>
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-16 flex items-center justify-between">
-      <a href="#" class="text-lg font-semibold tracking-tighter text-white hover:text-blue-500 transition-colors uppercase">
-        Alex Rivera
-      </a>
-
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-blue-500 transition-colors">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-
-      <!-- Desktop Navigation -->
-      <div class="hidden lg:flex gap-8 xl:gap-12 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-400">
-        <a href="#portfolio" class="hover:text-blue-500 transition-colors">Portfolio</a>
-        <a href="#services" class="hover:text-blue-500 transition-colors">Services</a>
-        <a href="#process" class="hover:text-blue-500 transition-colors">Process</a>
-        <a href="#contact" class="hover:text-blue-500 transition-colors">Contact</a>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#" class="logo">Alex Rivera</a>
+      <button class="mobile-btn" id="mobile-menu-btn">&#9776;</button>
+      <div class="nav-links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
       </div>
-
-      <!-- Mobile Menu Overlay -->
-      <div id="mobile-menu" class="fixed inset-0 bg-zinc-950/98 z-50 hidden flex-col items-center justify-center gap-8">
-        <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 text-zinc-400 hover:text-blue-500 transition-colors">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-        <a href="#portfolio" class="mobile-menu-link text-2xl font-bold uppercase tracking-[0.2em] text-white hover:text-blue-500 transition-colors">Portfolio</a>
-        <a href="#services" class="mobile-menu-link text-2xl font-bold uppercase tracking-[0.2em] text-white hover:text-blue-500 transition-colors">Services</a>
-        <a href="#process" class="mobile-menu-link text-2xl font-bold uppercase tracking-[0.2em] text-white hover:text-blue-500 transition-colors">Process</a>
-        <a href="#contact" class="mobile-menu-link text-2xl font-bold uppercase tracking-[0.2em] text-white hover:text-blue-500 transition-colors">Contact</a>
-      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <button id="mobile-menu-close">&times;</button>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <main class="relative z-10 px-4 sm:px-6 lg:px-10 py-8 lg:py-0 lg:min-h-screen">
-    <!-- Background Gradient Orbs -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none opacity-20">
-      <div class="absolute top-20 left-10 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px]"></div>
-      <div class="absolute top-40 right-10 w-72 h-72 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px]"></div>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-tagline">Featured Work</div>
+      <h1 class="hero-title">
+        WordPress Developer<br>
+        Who Builds Sites<br>
+        That Convert
+      </h1>
+      <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cd7345e3-1766070002920.png" alt="Alex Rivera" class="hero-image">
+      <div class="hero-cta">
+        <a href="#portfolio" class="cta-btn">View Portfolio</a>
+      </div>
+      <p class="hero-description">
+        Custom WordPress development for businesses that need more than a template. Fast, secure, and built to convert visitors into customers.
+      </p>
     </div>
+  </header>
 
-    <div class="lg:grid lg:grid-cols-8 relative">
-      <div class="lg:col-start-2 lg:col-span-4 pt-8 lg:pt-16">
-        <div class="flex items-center gap-4 mb-6 lg:mb-8">
-          <div class="w-[2px] h-4 bg-blue-500"></div>
-          <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-zinc-400">Featured Work</span>
-        </div>
-
-        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[100px] leading-[0.9] lg:leading-[0.85] font-medium tracking-tight mb-10 lg:mb-20">
-          WordPress Developer<br>Who Builds Sites<br>That Convert
-        </h1>
-
-        <div class="w-full relative group">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cd7345e3-1766070002920.png" alt="Professional WordPress developer Alex Rivera working on custom website development at modern desk with dual monitors showing code and design mockups" class="w-full grayscale brightness-90 hover:grayscale-0 transition duration-700 h-[300px] sm:h-[400px] lg:h-[500px] object-cover object-top rounded-2xl lg:rounded-none">
-          <div class="mt-6 lg:mt-8">
-            <h3 class="text-xl lg:text-2xl font-medium">Alex Rivera</h3>
-            <p class="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">WordPress Specialist</p>
-          </div>
-          
-          <!-- Dot Pattern Decoration -->
-          <div class="absolute -left-10 bottom-24 opacity-30 hidden lg:block">
-            <div class="grid grid-cols-4 gap-2">
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-              <div class="w-1 h-1 bg-white rounded-full"></div>
-            </div>
-          </div>
-        </div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio">
+    <h2 class="section-title">Projects that deliver measurable results</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1eb7c1cb3-1764655134961.png" alt="E-commerce Project">
+        <h4>Organic Skincare Store</h4>
+        <p>WooCommerce platform with custom checkout flow. Increased conversion rate by 3x in first quarter.</p>
+        <span>WordPress • WooCommerce • Stripe</span>
       </div>
-
-      <div class="lg:col-start-6 lg:col-span-3 pt-12 lg:pt-16 relative">
-        <!-- Blue CTA Box (Desktop) -->
-        <div class="hidden lg:flex bg-blue-500 w-40 h-40 xl:w-56 xl:h-56 p-6 xl:p-10 flex-col justify-between absolute -top-10 -left-10 hover:scale-105 transition-transform cursor-pointer">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-          <span class="text-black text-xl xl:text-2xl font-bold leading-tight uppercase">View<br>Portfolio</span>
-        </div>
-
-        <!-- Mobile CTA Button -->
-        <div class="lg:hidden mb-8">
-          <a href="#portfolio" class="w-full bg-blue-500 text-white py-4 px-6 font-bold uppercase tracking-wider hover:bg-blue-600 transition-colors flex items-center justify-center gap-2">
-            <span>View Portfolio</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <div class="lg:mt-64 lg:ml-12">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-[2px] h-4 bg-blue-500"></div>
-            <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-zinc-400">What I Do</span>
-          </div>
-          <p class="text-zinc-400 text-sm leading-relaxed max-w-xs">
-            Custom WordPress development for businesses that need more than a template. Fast, secure, and built to convert visitors into customers.
-          </p>
-        </div>
-
-        <!-- Recent Projects Mini Cards -->
-        <div class="mt-8 lg:mt-20 lg:ml-12 grid grid-cols-2 gap-4">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1d6ec7e4a-1764660533966.png" alt="Modern e-commerce website dashboard showing analytics and product management interface built with WordPress" class="grayscale rounded-lg lg:rounded-none h-full object-cover">
-          <div class="bg-zinc-900 p-4 lg:p-6 flex flex-col justify-between relative rounded-lg lg:rounded-none">
-            <div class="opacity-50 space-y-1">
-              <div class="flex items-end gap-[2px] h-8">
-                <div class="w-1 bg-white h-2"></div>
-                <div class="w-1 bg-white h-4"></div>
-                <div class="w-1 bg-white h-3"></div>
-                <div class="w-1 bg-white h-6"></div>
-                <div class="w-1 bg-white h-4"></div>
-              </div>
-            </div>
-            <div>
-              <p class="text-xs font-bold">Recent Project</p>
-              <p class="text-[10px] text-zinc-500">E-commerce Site</p>
-            </div>
-            <div class="absolute bottom-4 right-4 bg-blue-500 p-2 hover:scale-110 transition-transform cursor-pointer">
-              <svg width="12" height="12" fill="white" viewBox="0 0 24 24">
-                <path d="M3 22v-20l18 10-18 10z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- Client Badge -->
-        <div class="mt-8 lg:ml-12 bg-zinc-900 p-4 rounded-xl border border-zinc-800 shadow-xl flex items-center gap-4 max-w-xs">
-          <div class="h-12 w-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-            </svg>
-          </div>
-          <div>
-            <div class="text-sm font-semibold text-white">Top Rated</div>
-            <div class="text-xs text-zinc-500">Clutch 2024</div>
-          </div>
-        </div>
+      <div class="portfolio-card">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_109d656ea-1766560938446.png" alt="SaaS Project">
+        <h4>Project Management Tool</h4>
+        <p>High-converting landing page with custom animations. 50% faster load time than previous site.</p>
       </div>
-    </div>
-  </main>
-
-  <!-- Portfolio Grid Section -->
-  <section id="portfolio" class="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-32 border-t border-white/5">
-    <div class="max-w-6xl mx-auto mb-12 lg:mb-20">
-      <div class="text-center">
-        <div class="flex justify-center items-center gap-4 mb-6 lg:mb-8">
-          <div class="w-[2px] h-4 bg-blue-500"></div>
-          <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-zinc-400">Recent Work</span>
-        </div>
-        <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-4">
-          Projects that deliver<br class="hidden sm:block"><span class="sm:hidden"> </span>measurable results
-        </h2>
-        <p class="text-[10px] uppercase tracking-[0.3em] text-zinc-500">Custom WordPress solutions for growing businesses</p>
-      </div>
-    </div>
-
-    <div class="portfolio-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-4 auto-rows-auto lg:auto-rows-[240px]">
-      <!-- Project 1: E-commerce Platform (Large) -->
-      <div class="portfolio-card sm:col-span-1 lg:col-start-1 lg:col-span-3 lg:row-span-2 bg-zinc-900 border border-white/5 rounded-2xl p-6 lg:p-8 flex flex-col justify-between overflow-hidden relative group hover:border-blue-500/30 transition-all duration-500 min-h-[280px] lg:min-h-0 cursor-pointer">
-        <div class="absolute inset-0 opacity-20 grayscale group-hover:grayscale-0 transition duration-700">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1eb7c1cb3-1764655134961.png" alt="Modern e-commerce platform built with WooCommerce showing product grid layout and shopping cart functionality" class="w-full h-full object-cover">
-        </div>
-        <div class="relative z-10">
-          <span class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 block mb-2">E-commerce</span>
-          <h4 class="text-xl lg:text-2xl font-medium mb-3">Organic Skincare Store</h4>
-          <p class="text-sm text-zinc-400 mb-4">WooCommerce platform with custom checkout flow. Increased conversion rate by 3x in first quarter.</p>
-          <div class="flex items-center gap-2 text-xs text-blue-400">
-            <span>WordPress</span>
-            <span>•</span>
-            <span>WooCommerce</span>
-            <span>•</span>
-            <span>Stripe</span>
-          </div>
-        </div>
-        <div class="relative z-10 mt-4 text-[10px] uppercase tracking-[0.2em] text-blue-400 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-          View Case Study
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Project 2: SaaS Landing Page -->
-      <div class="portfolio-card sm:col-span-1 lg:col-span-2 lg:row-span-1 bg-zinc-900 border border-white/5 rounded-2xl p-6 lg:p-8 flex flex-col justify-between hover:border-blue-500/30 transition-all duration-500 min-h-[220px] lg:min-h-0 group cursor-pointer">
-        <div class="absolute inset-0 opacity-10 grayscale group-hover:grayscale-0 transition duration-700">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_109d656ea-1766560938446.png" alt="SaaS landing page with hero section, feature comparison table, and pricing cards designed for conversion optimization" class="w-full h-full object-cover">
-        </div>
-        <div class="relative z-10">
-          <span class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 block mb-2">SaaS</span>
-          <h4 class="text-lg font-medium mb-2">Project Management Tool</h4>
-          <p class="text-xs text-zinc-400 mb-3">High-converting landing page with custom animations. 50% faster load time than previous site.</p>
-        </div>
-        <div class="relative z-10 text-[10px] uppercase tracking-[0.2em] text-blue-400 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-          View Project
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Project 3: Real Estate Platform (Large) -->
-      <div class="portfolio-card lg:col-span-3 lg:row-span-2 bg-gradient-to-br from-zinc-900 to-zinc-950 border border-white/10 rounded-2xl p-6 lg:p-8 relative overflow-hidden flex flex-col justify-end group hover:border-blue-500/30 transition-all duration-500 min-h-[280px] lg:min-h-0 cursor-pointer">
-        <div class="absolute inset-0 opacity-30 grayscale group-hover:grayscale-0 transition duration-700">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11efb8956-1764655545926.png" alt="Real estate property listing website with advanced search filters, map integration, and virtual tour functionality" class="w-full h-full object-cover">
-        </div>
-        <span class="absolute top-6 left-6 lg:top-8 lg:left-8 text-[10px] uppercase tracking-[0.2em] text-zinc-500 z-10">Real Estate</span>
-        <div class="relative z-10">
-          <h3 class="text-3xl lg:text-4xl font-medium tracking-tighter mb-3">Luxury Property Listings</h3>
-          <p class="text-sm text-zinc-400 mb-3">Custom search with map integration. 10,000+ monthly visitors, 40% increase in inquiries.</p>
-          <div class="flex items-center gap-2 text-xs text-blue-400 mb-4">
-            <span>WordPress</span>
-            <span>•</span>
-            <span>Custom Post Types</span>
-            <span>•</span>
-            <span>Google Maps API</span>
-          </div>
-          <div class="text-[10px] uppercase tracking-[0.2em] text-blue-400 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-            View Case Study
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4: Restaurant Website -->
-      <div class="portfolio-card sm:col-span-1 lg:col-start-2 lg:col-span-2 lg:row-span-1 bg-zinc-900 border border-white/5 rounded-2xl p-6 lg:p-8 flex flex-col justify-between hover:border-blue-500/30 transition-all duration-500 min-h-[220px] lg:min-h-0 group cursor-pointer">
-        <div class="absolute inset-0 opacity-10 grayscale group-hover:grayscale-0 transition duration-700">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_16cbb695f-1766806152388.png" alt="Restaurant website featuring online menu, reservation system, and photo gallery of dishes and dining atmosphere" class="w-full h-full object-cover">
-        </div>
-        <div class="relative z-10">
-          <span class="text-[10px] uppercase tracking-[0.2em] text-zinc-500 block mb-2">Restaurant</span>
-          <h4 class="text-lg font-medium mb-2">Italian Bistro</h4>
-          <p class="text-xs text-zinc-400 mb-3">Online menu with reservation system. Mobile-first design, perfect PageSpeed score.</p>
-        </div>
-        <div class="relative z-10 text-[10px] uppercase tracking-[0.2em] text-blue-400 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-          View Project
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </div>
-      </div>
-
-      <!-- Project 5: Metrics Card -->
-      <div class="portfolio-card sm:col-span-1 lg:col-span-2 lg:row-span-1 bg-zinc-900 border border-white/5 rounded-2xl p-6 flex flex-col justify-between hover:border-white/10 transition-all duration-500 min-h-[180px] lg:min-h-0">
-        <span class="text-[10px] uppercase tracking-[0.2em] text-zinc-500">Average Results</span>
-        <div>
-          <p class="text-xs text-zinc-400 mb-1">Projects delivered</p>
-          <p class="text-2xl lg:text-3xl font-medium text-blue-400">50+</p>
-        </div>
+      <div class="portfolio-card">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11efb8956-1764655545926.png" alt="Real Estate Project">
+        <h4>Luxury Property Listings</h4>
+        <p>Custom search with map integration. 10,000+ monthly visitors, 40% increase in inquiries.</p>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-32 border-t border-white/5">
-    <div class="max-w-4xl mx-auto mb-12 lg:mb-24">
-      <div class="text-center">
-        <div class="flex justify-center items-center gap-4 mb-6 lg:mb-8">
-          <div class="w-[2px] h-4 bg-blue-500"></div>
-          <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-zinc-400">What's Included</span>
-        </div>
-        <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6">
-          Full-service WordPress<br class="hidden sm:block"><span class="sm:hidden"> </span>development
-        </h2>
-        <p class="max-w-2xl mx-auto text-zinc-400 text-sm leading-relaxed px-4 sm:px-0">
-          From initial concept to ongoing maintenance, I handle every aspect of your WordPress site. No templates, no shortcuts—just custom solutions built for your business.
-        </p>
+  <section id="services" class="section services">
+    <h2 class="section-title">Full-service WordPress development</h2>
+    <p class="section-desc">
+      From initial concept to ongoing maintenance, I handle every aspect of your WordPress site. No templates, no shortcuts—just custom solutions built for your business.
+    </p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h4>Custom Development</h4>
+        <p>Unique WordPress sites built to convert.</p>
       </div>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-8 gap-8 lg:gap-12 items-start lg:items-center max-w-7xl mx-auto">
-      <!-- Left Column Services -->
-      <div class="lg:col-start-1 lg:col-span-2 space-y-10 lg:space-y-20 order-2 lg:order-1">
-        <div class="service-card group">
-          <div class="w-10 h-10 mb-6 flex items-center justify-center text-blue-500 border border-blue-500/20 bg-blue-500/5 group-hover:bg-blue-500 group-hover:text-black transition-all duration-300">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-          </div>
-          <h4 class="text-xl font-medium mb-3">Custom Development</h4>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-            Hand-coded WordPress themes built from scratch. No page builders, no bloat—just clean, performant code.
-          </p>
-          <a href="#contact" class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400 hover:underline">
-            See Examples →
-          </a>
-        </div>
-
-        <div class="service-card group">
-          <div class="w-10 h-10 mb-6 flex items-center justify-center text-blue-500 border border-blue-500/20 bg-blue-500/5 group-hover:bg-blue-500 group-hover:text-black transition-all duration-300">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-              <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>
-          </div>
-          <h4 class="text-xl font-medium mb-3">Responsive Design</h4>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-            Mobile-first approach ensures your site looks perfect on every device. 60% of traffic is mobile—don't lose it.
-          </p>
-          <a href="#contact" class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400 hover:underline">
-            See Examples →
-          </a>
-        </div>
+      <div class="service-card">
+        <h4>Maintenance & Support</h4>
+        <p>Ongoing updates and security monitoring.</p>
       </div>
-
-      <!-- Center Image -->
-      <div class="lg:col-span-4 relative group order-1 lg:order-2">
-        <div class="rounded-2xl lg:rounded-3xl overflow-hidden border border-white/10 shadow-2xl hover:border-blue-500/20 transition-all duration-500">
-          <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1278e5e50-1764670617656.png" alt="Developer workspace showing WordPress dashboard on laptop screen with code editor and design mockups on second monitor" class="w-full h-[300px] sm:h-[400px] lg:h-[600px] object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-75 transition duration-700">
-        </div>
-
-        <!-- Floating Stat Card -->
-        <div class="absolute top-4 right-4 lg:top-10 lg:right-[-20px] bg-blue-500 text-black p-4 lg:p-6 rounded-xl lg:rounded-2xl shadow-2xl max-w-[150px] lg:max-w-[200px] hover:scale-105 transition-transform cursor-pointer">
-          <p class="text-xl lg:text-2xl font-bold">2 weeks</p>
-          <p class="text-[9px] lg:text-[10px] leading-tight text-black/70 mt-1">Average project delivery time for custom WordPress sites.</p>
-        </div>
-      </div>
-
-      <!-- Right Column Services -->
-      <div class="lg:col-span-2 space-y-10 lg:space-y-20 order-3">
-        <div class="service-card group">
-          <div class="w-10 h-10 mb-6 flex items-center justify-center text-blue-500 border border-blue-500/20 bg-blue-500/5 group-hover:bg-blue-500 group-hover:text-black transition-all duration-300">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-          <h4 class="text-xl font-medium mb-3">SEO Optimization</h4>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-            Built-in SEO best practices. Fast load times, clean markup, and proper schema ensure Google loves your site.
-          </p>
-          <a href="#contact" class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400 hover:underline">
-            Learn More →
-          </a>
-        </div>
-
-        <div class="service-card group">
-          <div class="w-10 h-10 mb-6 flex items-center justify-center text-blue-500 border border-blue-500/20 bg-blue-500/5 group-hover:bg-blue-500 group-hover:text-black transition-all duration-300">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-          </div>
-          <h4 class="text-xl font-medium mb-3">Ongoing Support</h4>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">
-            30 days post-launch support included. Need updates? Monthly retainer packages available for peace of mind.
-          </p>
-          <a href="#contact" class="text-[10px] font-bold uppercase tracking-[0.2em] text-blue-400 hover:underline">
-            View Packages →
-          </a>
-        </div>
+      <div class="service-card">
+        <h4>E-commerce Solutions</h4>
+        <p>WooCommerce setup and optimization.</p>
       </div>
     </div>
   </section>
 
-  <!-- Process Timeline Section -->
-  <section id="process" class="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-32 border-t border-white/5">
-    <div class="max-w-6xl mx-auto mb-12 lg:mb-20">
-      <div class="text-center">
-        <div class="flex justify-center items-center gap-4 mb-6 lg:mb-8">
-          <div class="w-[2px] h-4 bg-blue-500"></div>
-          <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-zinc-400">How It Works</span>
-        </div>
-        <h2 class="section-title text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6">
-          From concept to launch<br class="hidden sm:block"><span class="sm:hidden"> </span>in 2 weeks
-        </h2>
-        <p class="max-w-2xl mx-auto text-zinc-400 text-sm leading-relaxed px-4 sm:px-0">
-          A streamlined process that keeps you in the loop while I handle the technical heavy lifting. No surprises, no delays.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto">
-      <!-- Timeline Container -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-        <!-- Progress Bar (Desktop) -->
-        <div class="hidden md:block absolute top-16 left-0 right-0 h-[2px] bg-zinc-800">
-          <div class="h-full w-3/4 bg-gradient-to-r from-blue-500 to-purple-500"></div>
-        </div>
-
-        <!-- Step 1: Discovery -->
-        <div class="timeline-step bg-zinc-900 border border-white/5 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-500 relative">
-          <div class="w-12 h-12 rounded-full bg-blue-500 text-black font-bold text-xl flex items-center justify-center mb-6">1</div>
-          <h4 class="text-lg font-medium mb-3">Discovery</h4>
-          <p class="text-sm text-zinc-400 mb-2">Day 1-3</p>
-          <p class="text-xs text-zinc-500 leading-relaxed">
-            Initial consultation to understand your business goals. Wireframes and sitemap approved before any code is written.
-          </p>
-        </div>
-
-        <!-- Step 2: Development -->
-        <div class="timeline-step bg-zinc-900 border border-white/5 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-500 relative">
-          <div class="w-12 h-12 rounded-full bg-blue-500 text-black font-bold text-xl flex items-center justify-center mb-6">2</div>
-          <h4 class="text-lg font-medium mb-3">Development</h4>
-          <p class="text-sm text-zinc-400 mb-2">Day 4-10</p>
-          <p class="text-xs text-zinc-500 leading-relaxed">
-            Custom theme development with regular check-ins. You'll see progress daily on a staging site.
-          </p>
-        </div>
-
-        <!-- Step 3: Testing -->
-        <div class="timeline-step bg-zinc-900 border border-white/5 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-500 relative">
-          <div class="w-12 h-12 rounded-full bg-blue-500 text-black font-bold text-xl flex items-center justify-center mb-6">3</div>
-          <h4 class="text-lg font-medium mb-3">Testing</h4>
-          <p class="text-sm text-zinc-400 mb-2">Day 11-14</p>
-          <p class="text-xs text-zinc-500 leading-relaxed">
-            Cross-browser testing, mobile optimization, and performance tuning. Your feedback incorporated before launch.
-          </p>
-        </div>
-
-        <!-- Step 4: Launch -->
-        <div class="timeline-step bg-zinc-900 border border-white/5 rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-500 relative">
-          <div class="w-12 h-12 rounded-full bg-blue-500 text-black font-bold text-xl flex items-center justify-center mb-6">4</div>
-          <h4 class="text-lg font-medium mb-3">Launch</h4>
-          <p class="text-sm text-zinc-400 mb-2">Week 3+</p>
-          <p class="text-xs text-zinc-500 leading-relaxed">
-            Site goes live with monitoring in place. 30 days of support included for any tweaks or questions.
-          </p>
-        </div>
-      </div>
-
-      <!-- CTA Below Timeline -->
-      <div class="mt-12 text-center">
-        <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-medium text-sm rounded-full transition-all hover:scale-105 shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)]">
-          Start Your Project
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="7" y1="17" x2="17" y2="7"></line>
-            <polyline points="7 7 17 7 17 17"></polyline>
-          </svg>
-        </a>
-        <p class="text-xs text-zinc-500 mt-4">Book a free 30-minute discovery call</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form Section -->
-  <section id="contact" class="relative z-10 px-4 sm:px-6 lg:px-10 py-16 lg:py-32 border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl">
-        <div class="grid md:grid-cols-2">
-          <!-- Form Column -->
-          <div class="p-8 md:p-16 flex flex-col justify-center">
-            <h2 class="text-3xl font-medium tracking-tight mb-2">Start Your Project</h2>
-            <p class="text-zinc-400 text-sm mb-8">Let's discuss your WordPress needs and see if we're a good fit.</p>
-
-            <form class="space-y-6">
-              <div class="grid grid-cols-2 gap-6">
-                <div class="space-y-2">
-                  <label class="text-xs font-medium text-zinc-500 uppercase tracking-wide">Project Type</label>
-                  <div class="relative">
-                    <select class="w-full bg-transparent border-b border-zinc-800 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors appearance-none">
-                      <option class="bg-zinc-900">New Website</option>
-                      <option class="bg-zinc-900">Redesign</option>
-                      <option class="bg-zinc-900">Maintenance</option>
-                      <option class="bg-zinc-900">Other</option>
-                    </select>
-                    <svg class="absolute right-0 top-3 pointer-events-none text-zinc-500" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </div>
-                </div>
-                <div class="space-y-2">
-                  <label class="text-xs font-medium text-zinc-500 uppercase tracking-wide">Budget</label>
-                  <div class="relative">
-                    <select class="w-full bg-transparent border-b border-zinc-800 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors appearance-none">
-                      <option class="bg-zinc-900">$2k - $5k</option>
-                      <option class="bg-zinc-900">$5k - $10k</option>
-                      <option class="bg-zinc-900">$10k+</option>
-                      <option class="bg-zinc-900">Not sure yet</option>
-                    </select>
-                    <svg class="absolute right-0 top-3 pointer-events-none text-zinc-500" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              <div class="space-y-2">
-                <label class="text-xs font-medium text-zinc-500 uppercase tracking-wide">Name</label>
-                <input type="text" placeholder="John Doe" class="w-full bg-transparent border-b border-zinc-800 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors placeholder-zinc-700">
-              </div>
-
-              <div class="space-y-2">
-                <label class="text-xs font-medium text-zinc-500 uppercase tracking-wide">Email</label>
-                <input type="email" placeholder="john@company.com" class="w-full bg-transparent border-b border-zinc-800 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors placeholder-zinc-700">
-              </div>
-
-              <div class="space-y-2">
-                <label class="text-xs font-medium text-zinc-500 uppercase tracking-wide">Project Details</label>
-                <textarea rows="4" placeholder="Tell me about your project..." class="w-full bg-transparent border-b border-zinc-800 py-2 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors placeholder-zinc-700 resize-none"></textarea>
-              </div>
-
-              <!-- Newsletter Toggle -->
-              <div class="flex items-center justify-between pt-2">
-                <span class="text-sm text-zinc-300">Subscribe to updates</span>
-                <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-                  <input type="checkbox" name="newsletter" id="newsletter" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 border-zinc-800 appearance-none cursor-pointer transition-all duration-300">
-                  <label for="newsletter" class="toggle-label block overflow-hidden h-5 rounded-full bg-zinc-800 cursor-pointer"></label>
-                </div>
-              </div>
-
-              <button class="w-full bg-white text-zinc-950 mt-4 py-3 rounded-lg font-medium text-sm hover:bg-zinc-200 transition-colors">
-                Send Message
-              </button>
-              <p class="text-xs text-zinc-500 text-center">I typically respond within 24 hours</p>
-            </form>
-          </div>
-
-          <!-- Image Column -->
-          <div class="relative h-64 md:h-auto bg-zinc-800">
-            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13c2b6932-1766584477658.png" alt="Modern collaborative workspace showing team members discussing web design on large monitor with sticky notes and wireframes" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-overlay">
-            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent"></div>
-
-            <div class="absolute bottom-8 left-8 right-8">
-              <div class="bg-zinc-950/80 backdrop-blur-md border border-white/5 p-4 rounded-xl">
-                <div class="flex items-center gap-3">
-                  <div class="p-2 bg-blue-500/20 rounded-lg text-blue-500">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm font-medium text-white">24hr Response Time</p>
-                    <p class="text-xs text-zinc-500">Usually faster on weekdays</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="relative z-10 px-4 sm:px-6 lg:px-10 py-12 lg:py-16 border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-        <div class="flex items-center gap-3">
-          <span class="text-lg font-semibold tracking-tighter text-white uppercase">Alex Rivera</span>
-          <span class="text-zinc-600">/</span>
-          <span class="text-xs text-zinc-500">WordPress Specialist</span>
-        </div>
-
-        <div class="flex gap-6 text-zinc-500">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors" aria-label="GitHub profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors" aria-label="LinkedIn profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-500 transition-colors" aria-label="Twitter profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-            </svg>
-          </a>
-        </div>
-
-        <p class="text-xs text-zinc-600">© 2026 Alex Rivera. All rights reserved.</p>
-      </div>
-
-      <div class="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="flex gap-8 text-xs text-zinc-500">
-          <a href="#" class="hover:text-blue-500 transition-colors">Privacy Policy</a>
-          <a href="#" class="hover:text-blue-500 transition-colors">Terms of Service</a>
-        </div>
-        <p class="text-xs text-zinc-600">Built with WordPress + Custom Code</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- GSAP Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-  <script>
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-    const mobileMenuClose = document.getElementById("mobile-menu-close");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
-
-    if (mobileMenuBtn && mobileMenu && mobileMenuClose) {
-      mobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.remove("hidden");
-        mobileMenu.classList.add("flex");
-        document.body.style.overflow = "hidden";
-      });
-
-      mobileMenuClose.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-        mobileMenu.classList.remove("flex");
-        document.body.style.overflow = "";
-      });
-
-      mobileMenuLinks.forEach(link => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-          mobileMenu.classList.remove("flex");
-          document.body.style.overflow = "";
-        });
-      });
-    }
-
-    // GSAP Animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Set initial states
-    document.addEventListener("DOMContentLoaded", () => {
-      gsap.set(".section-title", { opacity: 0, y: 40 });
-      gsap.set(".portfolio-card", { opacity: 0, y: 60 });
-      gsap.set(".service-card", { opacity: 0, y: 40 });
-      gsap.set(".timeline-step", { opacity: 0, y: 40 });
-    });
-
-    // Animate on load/scroll
-    window.addEventListener("load", () => {
-      requestAnimationFrame(() => {
-        // Section Titles
-        document.querySelectorAll(".section-title").forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight * 0.8;
-
-          if (isVisible) {
-            gsap.set(el, { opacity: 1, y: 0 });
-          } else {
-            gsap.to(el, {
-              opacity: 1,
-              y: 0,
-              duration: 0.8,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 80%"
-              }
-            });
-          }
-        });
-
-        // Portfolio Grid - Staggered
-        const portfolioCards = document.querySelectorAll(".portfolio-card");
-        if (portfolioCards.length > 0) {
-          const firstCard = portfolioCards[0];
-          const rect = firstCard.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight * 0.7;
-
-          if (isVisible) {
-            gsap.set(portfolioCards, { opacity: 1, y: 0 });
-          } else {
-            gsap.to(portfolioCards, {
-              opacity: 1,
-              y: 0,
-              duration: 0.6,
-              stagger: 0.1,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: ".portfolio-grid",
-                start: "top 70%"
-              }
-            });
-          }
-        }
-
-        // Service Cards
-        document.querySelectorAll(".service-card").forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight * 0.8;
-
-          if (isVisible) {
-            gsap.set(el, { opacity: 1, y: 0 });
-          } else {
-            gsap.to(el, {
-              opacity: 1,
-              y: 0,
-              duration: 0.6,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 80%"
-              }
-            });
-          }
-        });
-
-        // Timeline Steps
-        const timelineSteps = document.querySelectorAll(".timeline-step");
-        if (timelineSteps.length > 0) {
-          const firstStep = timelineSteps[0];
-          const rect = firstStep.getBoundingClientRect();
-          const isVisible = rect.top < window.innerHeight * 0.8;
-
-          if (isVisible) {
-            gsap.set(timelineSteps, { opacity: 1, y: 0 });
-          } else {
-            gsap.to(timelineSteps, {
-              opacity: 1,
-              y: 0,
-              duration: 0.5,
-              stagger: 0.15,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: "#process",
-                start: "top 70%"
-              }
-            });
-          }
-        }
-
-        ScrollTrigger.refresh();
-      });
-    });
-
-    // Portfolio Card Hover Expansion
-    const portfolioCards = document.querySelectorAll(".portfolio-card");
-    portfolioCards.forEach(card => {
-      card.addEventListener("mouseenter", () => {
-        gsap.to(card, {
-          scale: 1.02,
-          zIndex: 10,
-          duration: 0.3,
-          ease: "power2.out"
-        });
-      });
-
-      card.addEventListener("mouseleave", () => {
-        gsap.to(card, {
-          scale: 1,
-          zIndex: 1,
-          duration: 0.3,
-          ease: "power2.out"
-        });
-      });
-    });
-  </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

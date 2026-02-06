@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Rivera - WordPress Developer</title>
+  <title>Alex Rivera - WordPress Developer | Custom Sites That Convert</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Background Grid Lines -->
+  <div class="grid-lines">
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+  </div>
+
   <!-- Navigation -->
-  <nav class="nav">
+  <nav>
     <div class="nav-container">
       <a href="#" class="logo">Alex Rivera</a>
-      <button class="mobile-btn" id="mobile-menu-btn">&#9776;</button>
-      <div class="nav-links">
+      <button id="mobile-menu-btn">&#9776;</button>
+      <div class="desktop-nav">
         <a href="#portfolio">Portfolio</a>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
-    <div class="mobile-menu" id="mobile-menu">
+    <div id="mobile-menu">
       <button id="mobile-menu-close">&times;</button>
       <a href="#portfolio">Portfolio</a>
       <a href="#services">Services</a>
@@ -31,69 +36,62 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <div class="hero-tagline">Featured Work</div>
-      <h1 class="hero-title">
-        WordPress Developer<br>
-        Who Builds Sites<br>
-        That Convert
-      </h1>
-      <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cd7345e3-1766070002920.png" alt="Alex Rivera" class="hero-image">
-      <div class="hero-cta">
-        <a href="#portfolio" class="cta-btn">View Portfolio</a>
-      </div>
-      <p class="hero-description">
-        Custom WordPress development for businesses that need more than a template. Fast, secure, and built to convert visitors into customers.
-      </p>
+  <main>
+    <div class="hero-orbs">
+      <div class="orb blue"></div>
+      <div class="orb purple"></div>
     </div>
-  </header>
+    <div class="hero-content">
+      <div class="featured">Featured Work</div>
+      <h1>WordPress Developer<br>Who Builds Sites<br>That Convert</h1>
+      <div class="hero-image">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1cd7345e3-1766070002920.png" alt="Alex Rivera at desk">
+      </div>
+      <div class="cta-box">
+        <span>View Portfolio</span>
+      </div>
+    </div>
+  </main>
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="section portfolio">
-    <h2 class="section-title">Projects that deliver measurable results</h2>
+  <section id="portfolio">
+    <h2>Projects that deliver measurable results</h2>
     <div class="portfolio-grid">
       <div class="portfolio-card">
-        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1eb7c1cb3-1764655134961.png" alt="E-commerce Project">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1eb7c1cb3-1764655134961.png" alt="E-commerce platform">
         <h4>Organic Skincare Store</h4>
         <p>WooCommerce platform with custom checkout flow. Increased conversion rate by 3x in first quarter.</p>
-        <span>WordPress • WooCommerce • Stripe</span>
       </div>
       <div class="portfolio-card">
-        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_109d656ea-1766560938446.png" alt="SaaS Project">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_109d656ea-1766560938446.png" alt="SaaS landing page">
         <h4>Project Management Tool</h4>
         <p>High-converting landing page with custom animations. 50% faster load time than previous site.</p>
       </div>
       <div class="portfolio-card">
-        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11efb8956-1764655545926.png" alt="Real Estate Project">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11efb8956-1764655545926.png" alt="Real estate platform">
         <h4>Luxury Property Listings</h4>
         <p>Custom search with map integration. 10,000+ monthly visitors, 40% increase in inquiries.</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_16cbb695f-1766806152388.png" alt="Restaurant website">
+        <h4>Italian Bistro</h4>
+        <p>Online menu with reservation system. Mobile-first design, perfect PageSpeed score.</p>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="section services">
-    <h2 class="section-title">Full-service WordPress development</h2>
-    <p class="section-desc">
-      From initial concept to ongoing maintenance, I handle every aspect of your WordPress site. No templates, no shortcuts—just custom solutions built for your business.
-    </p>
+  <section id="services">
+    <h2>Full-service WordPress development</h2>
+    <p>From initial concept to ongoing maintenance, I handle every aspect of your WordPress site. No templates, no shortcuts—just custom solutions built for your business.</p>
     <div class="services-grid">
-      <div class="service-card">
-        <h4>Custom Development</h4>
-        <p>Unique WordPress sites built to convert.</p>
-      </div>
-      <div class="service-card">
-        <h4>Maintenance & Support</h4>
-        <p>Ongoing updates and security monitoring.</p>
-      </div>
-      <div class="service-card">
-        <h4>E-commerce Solutions</h4>
-        <p>WooCommerce setup and optimization.</p>
-      </div>
+      <div class="service-card">Custom Theme Development</div>
+      <div class="service-card">WooCommerce Integration</div>
+      <div class="service-card">Speed & SEO Optimization</div>
+      <div class="service-card">Ongoing Maintenance</div>
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

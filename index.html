@@ -1,153 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ObaroWebDev Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
-
-body{
-  background:linear-gradient(180deg,#020617,#050b1f,#020617);
-  color:#eaf6ff;
-  overflow-x:hidden;
-}
-
-/* Star background */
-body::before{
-  content:"";
-  position:fixed;
-  width:100%;
-  height:100%;
-  background:url('https://www.transparenttextures.com/patterns/stardust.png');
-  opacity:0.2;
-  z-index:-1;
-}
-
-header{
-  text-align:center;
-  padding:80px 20px;
-}
-
-header h1{
-  font-size:3rem;
-  color:#00d4ff;
-  text-shadow:0 0 20px #00d4ff;
-}
-
-header p{
-  margin-top:15px;
-  font-size:1.1rem;
-  opacity:0.85;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:12px 28px;
-  border-radius:30px;
-  background:#00d4ff;
-  color:#000;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 0 20px #00d4ff;
-}
-
-/* Sections */
-section{
-  padding:70px 20px;
-  max-width:1000px;
-  margin:auto;
-}
-
-h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-size:2rem;
-  color:#7df9ff;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:#0b1120;
-  padding:25px;
-  border-radius:15px;
-  box-shadow:0 0 15px rgba(0,212,255,0.2);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 0 25px rgba(0,212,255,0.5);
-}
-
-footer{
-  text-align:center;
-  padding:30px;
-  background:#020617;
-  margin-top:60px;
-  font-size:0.9rem;
-}
-
-a{color:#00d4ff;text-decoration:none;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ObaroWebDev Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>ObaroWebDev</h1>
-  <p>Front-End Developer & UI Designer crafting modern high-performance websites</p>
-  <a class="btn" href="#contact">Hire Me</a>
-</header>
-
-<section>
-  <h2>Services</h2>
-  <div class="grid">
-    <div class="card">Business Websites</div>
-    <div class="card">Portfolio Sites</div>
-    <div class="card">E-Commerce Stores</div>
-    <div class="card">Landing Pages</div>
-    <div class="card">Website Redesign</div>
-    <div class="card">Custom Projects</div>
+<!-- HERO -->
+<section id="hero">
+  <div class="container hero-content">
+    <h1>Hey, I'm <span class="brand">ObaroWebDev</span></h1>
+    <p>A Professional Front-End Developer & UI Designer</p>
+    <a href="#projects" class="btn">View My Work</a>
   </div>
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">HTML / CSS / JavaScript</div>
-    <div class="card">Responsive Design</div>
-    <div class="card">React & UI Frameworks</div>
-    <div class="card">UI/UX Design</div>
-    <div class="card">Performance Optimization</div>
-    <div class="card">Basic Web Security</div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a web developer specializing in building modern, responsive, and visually striking websites. I love turning ideas into reality using clean code and great design.
+    </p>
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Tech Stack</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">UI/UX Design</div>
+      <div class="skill">Performance Optimization</div>
+      <div class="skill">Web Security Basics</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Selected Works</h2>
+    <div class="grid">
+      <!-- Project 1 -->
+      <div class="card">
+        <div class="proj-img"></div>
+        <h3>Business Website</h3>
+        <p>A clean modern website for a local business</p>
+        <a href="#" class="proj-btn">View Live</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <div class="proj-img"></div>
+        <h3>Portfolio UI</h3>
+        <p>Responsive portfolio layout with animations</p>
+        <a href="#" class="proj-btn">View Live</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <div class="proj-img"></div>
+        <h3>E-Commerce Layout</h3>
+        <p>React & UI/UX optimized store layout</p>
+        <a href="#" class="proj-btn">View Live</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-  <h2>Contact</h2>
-  <div class="card" style="text-align:center;">
-    <p>📞 09022203005</p>
-    <p>✉ obaromichael47@gmail.com</p>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>📞 09022203005 • ✉ obaromichael47@gmail.com</p>
     <p>🌐 obarowebdev.onrender.com</p>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 ObaroWebDev — All Rights Reserved
+  <p>© 2026 ObaroWebDev — All Rights Reserved</p>
 </footer>
 
 </body>

@@ -1,172 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ObaroWebDev</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;}
-body{
-background:#f5f5f5;
-color:#111;
-scroll-behavior:smooth;
-}
-
-/* NAV */
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:30px 8%;
-display:flex;
-justify-content:space-between;
-background:rgba(245,245,245,0.8);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-nav a{
-text-decoration:none;
-color:#111;
-margin-left:25px;
-font-size:14px;
-opacity:0.7;
-}
-
-nav a:hover{opacity:1}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding:0 8%;
-}
-
-.hero h1{
-font-size:6vw;
-font-weight:800;
-line-height:1;
-}
-
-.hero p{
-margin-top:20px;
-font-size:20px;
-opacity:0.7;
-max-width:500px;
-}
-
-.btn{
-margin-top:30px;
-display:inline-block;
-padding:14px 28px;
-border:1px solid #111;
-text-decoration:none;
-color:#111;
-font-weight:600;
-}
-
-/* SECTIONS */
-section{
-min-height:90vh;
-padding:120px 8%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
-
-h2{
-font-size:48px;
-margin-bottom:25px;
-}
-
-section p{
-max-width:700px;
-font-size:18px;
-opacity:0.75;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-margin-top:40px;
-}
-
-.card{
-border-top:1px solid #ddd;
-padding-top:20px;
-font-size:18px;
-}
-
-/* FOOTER */
-footer{
-padding:80px 8%;
-font-size:14px;
-opacity:0.6;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Frontend Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
+<body class="bg-[#0f172a] text-slate-300 font-sans antialiased selection:bg-cyan-300 selection:text-cyan-900">
 
-<body>
+    <!-- Header / Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <span class="text-xl font-bold text-white tracking-tighter">PORTFOLIO.</span>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<nav>
-<strong>ObaroWebDev</strong>
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-6 max-w-4xl mx-auto pt-20">
+        <p class="text-cyan-400 font-mono mb-4">Hi, my name is</p>
+        <h1 class="text-5xl md:text-7xl font-bold text-slate-100 mb-4">Frontend Engineer.</h1>
+        <h2 class="text-4xl md:text-6xl font-bold text-slate-400 leading-tight">I build things for the web.</h2>
+        <p class="mt-6 text-lg max-w-xl leading-relaxed text-slate-400">
+            I’m a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.
+        </p>
+        <div class="mt-10">
+            <a href="#projects" class="px-8 py-4 border border-cyan-400 text-cyan-400 rounded hover:bg-cyan-400/10 transition-all font-mono">
+                Check out my work!
+            </a>
+        </div>
+    </section>
 
-<div class="hero">
-<h1>ObaroWebDev</h1>
-<p>Front-end developer crafting modern digital experiences with clean design and thoughtful interaction.</p>
-<a href="#projects" class="btn">View Projects</a>
-</div>
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto py-32 px-6">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-3xl font-bold text-slate-200">Some Things I’ve Built</h2>
+            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        </div>
 
-<section id="about">
-<h2>About</h2>
-<p>I focus on building elegant, high-performance websites that balance aesthetics and usability. My work blends strong visual design with efficient front-end engineering.</p>
-</section>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-[#112240] p-8 rounded-lg shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-cyan-400/30">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fa-regular fa-folder text-4xl text-cyan-400"></i>
+                    <div class="flex gap-4 text-xl">
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2">E-Commerce Platform</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">A full-featured web store with cart functionality and secure checkout integration.</p>
+                <div class="flex gap-4 text-xs font-mono text-slate-500">
+                    <span>React</span> <span>Tailwind</span> <span>Firebase</span>
+                </div>
+            </div>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="grid">
-<div class="card">HTML / CSS / JavaScript</div>
-<div class="card">React & UI Frameworks</div>
-<div class="card">Responsive Design</div>
-<div class="card">UI / UX Systems</div>
-<div class="card">Performance Optimization</div>
-<div class="card">Web Security Basics</div>
-</div>
-</section>
+            <!-- Project 2 -->
+            <div class="bg-[#112240] p-8 rounded-lg shadow-xl hover:-translate-y-2 transition-all border border-transparent hover:border-cyan-400/30">
+                <div class="flex justify-between items-start mb-6">
+                    <i class="fa-regular fa-folder text-4xl text-cyan-400"></i>
+                    <div class="flex gap-4 text-xl">
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="hover:text-cyan-400"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2">Social Dashboard</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Real-time analytics dashboard with interactive charts and dark mode support.</p>
+                <div class="flex gap-4 text-xs font-mono text-slate-500">
+                    <span>JavaScript</span> <span>Chart.js</span> <span>CSS3</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="projects">
-<h2>Selected Work</h2>
-<div class="grid">
-<div class="card">Business Website — Modern layout and conversion focused design</div>
-<div class="card">Portfolio Interface — Minimal editorial aesthetic</div>
-<div class="card">E-commerce Frontend — Responsive product experience</div>
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>09022203005<br>
-obaromichael47@gmail.com<br>
-obarowebdev.onrender.com</p>
-</section>
-
-<footer>
-© 2026 ObaroWebDev
-</footer>
-
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="py-10 text-center font-mono text-sm text-slate-500">
+        <a href="

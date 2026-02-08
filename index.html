@@ -3,145 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atelier - Bespoke Tailoring & Couture</title>
+
+<title>HKM Clothing Hub</title>
+
 <link rel="stylesheet" href="styles.css">
+
+<!-- Google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <header class="navbar">
-  <a href="#" class="logo">Atelier</a>
-  <nav class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <button class="mobile-toggle">☰</button>
+  <div class="container nav-inner">
+    <div class="logo">HKM Clothing Hub</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn">Book</a>
+    </nav>
+  </div>
 </header>
 
-<!-- Hero Section -->
-<section id="hero">
-  <h1>Bespoke Tailoring & Couture</h1>
-  <h2>Crafting Elegance</h2>
-  <p>Where artistry meets precision. Creating timeless pieces that celebrate your unique essence.</p>
-  <div class="hero-buttons">
-    <a href="#portfolio" class="btn">View Collection</a>
-    <a href="#contact" class="btn btn-outline">Book Consultation</a>
-  </div>
-</section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
 
-<!-- About Designer -->
-<section id="about">
-  <h2>About the Designer</h2>
-  <h3>A Passion for Perfection</h3>
-  <p>With over a decade of experience in haute couture and bespoke tailoring, I have dedicated my craft to creating garments that transcend fashion and become works of art.</p>
-  <p>Every stitch tells a story. Every design is born from a deep understanding of fabric, form, and the unique essence of each client. My atelier is a sanctuary where traditional craftsmanship meets contemporary elegance.</p>
-  <p>From bridal couture to executive tailoring, I believe in creating pieces that not only fit perfectly but make you feel extraordinary.</p>
+  <div class="container hero-content">
+    <h1 class="fade-in">Bespoke Tailoring,<br>Perfectly Crafted</h1>
+    <p class="fade-in delay">
+      Traditional Nigerian elegance meets modern luxury tailoring.
+    </p>
 
-  <div class="stats">
-    <div><span>10+</span> Years Experience</div>
-    <div><span>500+</span> Pieces Created</div>
-    <div><span>100%</span> Bespoke</div>
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services">
-  <h2>Services</h2>
-  <h3>The Art of Tailoring</h3>
-  <div class="service-cards">
-    <div class="service-card">
-      <h4>Bridal Couture</h4>
-      <p>Exquisite wedding gowns crafted to make your special day unforgettable. Each design is a masterpiece tailored to your vision.</p>
-    </div>
-    <div class="service-card">
-      <h4>Bespoke Tailoring</h4>
-      <p>Precision-cut suits and formal wear that command presence. Perfect fit, impeccable style, timeless elegance.</p>
-    </div>
-    <div class="service-card">
-      <h4>Evening Wear</h4>
-      <p>Red carpet ready designs for galas, events, and special occasions. Make every entrance memorable.</p>
-    </div>
-    <div class="service-card">
-      <h4>Alterations & Restoration</h4>
-      <p>Expert alterations and vintage garment restoration. Breathe new life into cherished pieces.</p>
+    <div class="hero-buttons fade-in delay2">
+      <a href="#gallery" class="btn">View Portfolio</a>
+      <a href="https://wa.me/2340000000000" class="btn-outline">Book on WhatsApp</a>
     </div>
   </div>
 </section>
 
-<!-- Portfolio -->
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <h3>Selected Creations</h3>
-  <div class="portfolio-grid">
-    <div class="portfolio-item">
-      <h4>Enchanted Lace Gown</h4>
-      <p>Bridal Couture</p>
-    </div>
-    <div class="portfolio-item">
-      <h4>Executive Power Suit</h4>
-      <p>Bespoke Tailoring</p>
-    </div>
-    <div class="portfolio-item">
-      <h4>Crimson Elegance</h4>
-      <p>Evening Wear</p>
+<!-- SERVICES -->
+<section id="services" class="section-light">
+  <div class="container">
+    <h2 class="center">Our Services</h2>
+
+    <div class="grid grid-3">
+      <div class="card">Traditional Wear<br><small>Agbada, Kaftan, Senator</small></div>
+      <div class="card">Modern Suits<br><small>English tailoring</small></div>
+      <div class="card">Alterations<br><small>Perfect fit guaranteed</small></div>
     </div>
   </div>
-  <a href="#portfolio" class="btn">View Full Collection</a>
 </section>
 
-<!-- Contact -->
+<!-- GALLERY SLIDER -->
+<section id="gallery">
+  <div class="container">
+    <h2 class="center">Selected Creations</h2>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="https://images.unsplash.com/photo-1593032465171-8c7c8d51a0d4" />
+        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03" />
+        <img src="https://images.unsplash.com/photo-1520975922284-8b456906c813" />
+      </div>
+
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-light">
+  <div class="container grid grid-2">
+    <div>
+      <h2>Craftsmanship & Heritage</h2>
+      <p>
+        At HKM Clothing Hub, every stitch tells a story.
+        We combine Nigerian tradition with modern tailoring precision.
+        Each piece is handcrafted to celebrate culture,
+        confidence, and individuality.
+      </p>
+    </div>
+
+    <img class="about-img"
+      src="https://images.unsplash.com/photo-1542060748-10c28b62716f">
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-  <h2>Get in Touch</h2>
-  <h3>Begin Your Journey</h3>
-  <p>Ready to create something extraordinary? Schedule a private consultation and let's bring your vision to life.</p>
-  
-  <div class="contact-info">
-    <div>
-      <h4>Visit Us</h4>
-      <p>123 Fashion Avenue, Suite 500<br>New York, NY 10001</p>
-    </div>
-    <div>
-      <h4>Call Us</h4>
-      <p>+1 (555) 123-4567</p>
-    </div>
-    <div>
-      <h4>Email Us</h4>
-      <p>hello@atelier.com</p>
-    </div>
-    <div>
-      <h4>Hours</h4>
-      <p>Mon - Fri: 10AM - 6PM<br>By appointment only</p>
-    </div>
-  </div>
+  <div class="container center">
+    <h2>Book a Consultation</h2>
+    <p>Let’s create your next masterpiece.</p>
 
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="tel" placeholder="Phone">
-    <select required>
-      <option value="">Select a service</option>
-      <option>Bridal Couture</option>
-      <option>Bespoke Tailoring</option>
-      <option>Evening Wear</option>
-      <option>Alterations & Restoration</option>
-    </select>
-    <textarea placeholder="Tell us about your vision..." required></textarea>
-    <button type="submit" class="btn">Send Inquiry</button>
-  </form>
+    <a href="https://wa.me/2340000000000" class="btn big">
+      Chat on WhatsApp
+    </a>
+  </div>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-  <p>Atelier — Crafting elegance, one stitch at a time.</p>
-  <nav class="footer-nav">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <p>© 2026 Atelier. All rights reserved.</p>
+  <p>HKM Clothing Hub — Crafted with precision.</p>
 </footer>
 
 <script src="script.js"></script>

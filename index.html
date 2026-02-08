@@ -3,42 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HKM Clothing</title>
+<title>Atelier - Bespoke Tailoring & Couture</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- Navbar -->
 <header class="navbar">
-  <a href="#" class="logo">HKM Clothing</a>
+  <a href="#" class="logo">Atelier</a>
   <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
     <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
   </nav>
   <button class="mobile-toggle">☰</button>
 </header>
 
+<!-- Hero Section -->
 <section id="hero">
-  <h1>Welcome to HKM Clothing</h1>
-  <p>Modern styles for everyone</p>
-  <a href="#shop" class="btn">Shop Now</a>
-</section>
-
-<section id="products">
-  <h2>Featured Products</h2>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="placeholder.jpg" alt="Product 1">
-      <h3>Product Name</h3>
-      <p>$49.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <!-- Repeat cards -->
+  <h1>Bespoke Tailoring & Couture</h1>
+  <h2>Crafting Elegance</h2>
+  <p>Where artistry meets precision. Creating timeless pieces that celebrate your unique essence.</p>
+  <div class="hero-buttons">
+    <a href="#portfolio" class="btn">View Collection</a>
+    <a href="#contact" class="btn btn-outline">Book Consultation</a>
   </div>
 </section>
 
+<!-- About Designer -->
+<section id="about">
+  <h2>About the Designer</h2>
+  <h3>A Passion for Perfection</h3>
+  <p>With over a decade of experience in haute couture and bespoke tailoring, I have dedicated my craft to creating garments that transcend fashion and become works of art.</p>
+  <p>Every stitch tells a story. Every design is born from a deep understanding of fabric, form, and the unique essence of each client. My atelier is a sanctuary where traditional craftsmanship meets contemporary elegance.</p>
+  <p>From bridal couture to executive tailoring, I believe in creating pieces that not only fit perfectly but make you feel extraordinary.</p>
+
+  <div class="stats">
+    <div><span>10+</span> Years Experience</div>
+    <div><span>500+</span> Pieces Created</div>
+    <div><span>100%</span> Bespoke</div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2>Services</h2>
+  <h3>The Art of Tailoring</h3>
+  <div class="service-cards">
+    <div class="service-card">
+      <h4>Bridal Couture</h4>
+      <p>Exquisite wedding gowns crafted to make your special day unforgettable. Each design is a masterpiece tailored to your vision.</p>
+    </div>
+    <div class="service-card">
+      <h4>Bespoke Tailoring</h4>
+      <p>Precision-cut suits and formal wear that command presence. Perfect fit, impeccable style, timeless elegance.</p>
+    </div>
+    <div class="service-card">
+      <h4>Evening Wear</h4>
+      <p>Red carpet ready designs for galas, events, and special occasions. Make every entrance memorable.</p>
+    </div>
+    <div class="service-card">
+      <h4>Alterations & Restoration</h4>
+      <p>Expert alterations and vintage garment restoration. Breathe new life into cherished pieces.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <h3>Selected Creations</h3>
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <h4>Enchanted Lace Gown</h4>
+      <p>Bridal Couture</p>
+    </div>
+    <div class="portfolio-item">
+      <h4>Executive Power Suit</h4>
+      <p>Bespoke Tailoring</p>
+    </div>
+    <div class="portfolio-item">
+      <h4>Crimson Elegance</h4>
+      <p>Evening Wear</p>
+    </div>
+  </div>
+  <a href="#portfolio" class="btn">View Full Collection</a>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <h3>Begin Your Journey</h3>
+  <p>Ready to create something extraordinary? Schedule a private consultation and let's bring your vision to life.</p>
+  
+  <div class="contact-info">
+    <div>
+      <h4>Visit Us</h4>
+      <p>123 Fashion Avenue, Suite 500<br>New York, NY 10001</p>
+    </div>
+    <div>
+      <h4>Call Us</h4>
+      <p>+1 (555) 123-4567</p>
+    </div>
+    <div>
+      <h4>Email Us</h4>
+      <p>hello@atelier.com</p>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Mon - Fri: 10AM - 6PM<br>By appointment only</p>
+    </div>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone">
+    <select required>
+      <option value="">Select a service</option>
+      <option>Bridal Couture</option>
+      <option>Bespoke Tailoring</option>
+      <option>Evening Wear</option>
+      <option>Alterations & Restoration</option>
+    </select>
+    <textarea placeholder="Tell us about your vision..." required></textarea>
+    <button type="submit" class="btn">Send Inquiry</button>
+  </form>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>© 2026 HKM Clothing</p>
+  <p>Atelier — Crafting elegance, one stitch at a time.</p>
+  <nav class="footer-nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>© 2026 Atelier. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
